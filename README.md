@@ -119,11 +119,67 @@ All five models were evaluated using the same test dataset and six classificatio
 | Gaussian Naive Bayes | 0.8082 | 0.7761 | 0.3199 | 0.6239 | 0.4229 | 0.3478 |
 | Random Forest | 0.8833 | 0.8085 | 0.4841 | 0.5399 | 0.5104 | 0.4453 |
 
+
 ## 6. Model Performance Visualization
 
-The following graphs compare all five classification models using six evaluation metrics.
+The following charts compare the performance of all five classification models across six evaluation metrics.
 
-![Model Performance Comparison](images/model_comparison_all_metrics (4).png)
+### Accuracy Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "Accuracy" 0 --> 1
+    bar [0.8303, 0.8473, 0.8955, 0.8082, 0.8833]
+```
+
+### AUC Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "AUC" 0 --> 1
+    bar [0.8002, 0.7693, 0.7404, 0.7761, 0.8085]
+```
+
+### Precision Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "Precision" 0 --> 1
+    bar [0.3591, 0.3859, 0.5661, 0.3199, 0.4841]
+```
+
+### Recall Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "Recall" 0 --> 1
+    bar [0.6455, 0.6013, 0.3093, 0.6239, 0.5399]
+```
+
+### F1 Score Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "F1 Score" 0 --> 1
+    bar [0.4615, 0.4701, 0.4000, 0.4229, 0.5104]
+```
+
+### MCC Comparison
+
+```mermaid
+xychart-beta
+    x-axis ["LR", "DT", "KNN", "GNB", "RF"]
+    y-axis "MCC" 0 --> 1
+    bar [0.3928, 0.3987, 0.3673, 0.3478, 0.4453]
+```
+
+**Observation:** Random Forest achieved the highest AUC (0.8085), F1 Score (0.5104), and MCC (0.4453). KNN achieved the highest accuracy (0.8955) and precision (0.5661), while Logistic Regression achieved the highest recall (0.6455).
+
 ## 7. Observations on Model Performance
 
 | ML Model | Observation |
