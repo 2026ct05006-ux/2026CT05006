@@ -123,7 +123,7 @@ All five models were evaluated using the same test dataset and six classificatio
 
 The following graphs compare all five classification models using six evaluation metrics.
 
-![Model Performance Comparison](images/model_comparison_all_metrics(4).png)
+![Model Performance Comparison](images/model_comparison_all_metrics (4).png)
 ## 7. Observations on Model Performance
 
 | ML Model | Observation |
