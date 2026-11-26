@@ -121,17 +121,9 @@ All five models were evaluated using the same test dataset and six classificatio
 
 ## 6. Model Performance Visualization
 
-The performance of all five classification algorithms was visualized using bar charts for the following metrics:
+The following graphs compare all five classification models using six evaluation metrics.
 
-- Accuracy
-- AUC
-- Precision
-- Recall
-- F1 Score
-- Matthews Correlation Coefficient (MCC)
-
-The grouped and individual metric comparison charts are generated in the Jupyter Notebook under the model performance visualization sections.
-
+![Model Performance Comparison](images/model_comparison_all_metrics.png)
 ## 7. Observations on Model Performance
 
 | ML Model | Observation |
